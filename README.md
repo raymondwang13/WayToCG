@@ -1,2 +1,2 @@
 # WayToCG
-Learning computer of graphics on the way
+Learning computer of graphics on the way.
