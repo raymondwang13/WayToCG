@@ -1,0 +1,30 @@
+﻿生成启动时间为 2015/5/9 20:31:44。
+     1>项目“E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\c1_triangles\c1_triangles.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\c1_triangles.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IE:\WayToCG\OpenGLLibs\include /IE:\WayToCG\OpenGLLibs\lib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\Debug\c1_triangles.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcmtd.lib /MANIFEST /ManifestFile:"Debug\c1_triangles.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\Debug\c1_triangles.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\Debug\c1_triangles.lib" /MACHINE:X86 Debug\c1_triangles.res
+         Debug\c1_triangles.exe.embed.manifest.res
+         Debug\LoadShaders.obj
+         Debug\main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\c1_triangles.exe.embed.manifest" /manifest Debug\c1_triangles.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         c1_triangles.vcxproj -> E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\Debug\c1_triangles.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\c1_triangles.unsuccessfulbuild”。
+         正在对“Debug\c1_triangles.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C1_Introduction_to_OpenGL\c1_triangles\c1_triangles\c1_triangles.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.01
