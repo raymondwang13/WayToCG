@@ -1,0 +1,30 @@
+I. For each shader object:
+1. Create a Shader Object
+	glCreateShader
+
+2. Compile your shader source into the object
+	glShaderSource
+	glCompileShader
+
+3. Verify that your shader compiled successfully
+	glGetShaderInfoLog
+
+
+II. Link multiple shader objects into a shader program:
+1. Create a shader program
+	glCreateProgram
+	glDeleteProgram
+	
+2. Attach the appropriate shader objects to the shader program
+	glAttachShader
+	glDetachShader
+
+3. Link the shader program
+	glLinkProgram
+	glGetProgramInfoLog
+
+4. Verify that the shader link phase completed successfully
+	glIsShader
+	glIsProgram
+
+5. Use the shader for vertex or fragment processing

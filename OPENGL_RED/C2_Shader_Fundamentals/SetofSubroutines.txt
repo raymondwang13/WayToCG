@@ -1,0 +1,35 @@
+// Declaring a Set of Subroutines
+
+subroutine vec4 LightFunc(vec3);
+
+subroutine (LightFunc) vec4 ambient(vec3 n)
+{
+	return Materials.ambient;
+}
+
+subroutine (LightFunc) vec4 diffuse(vec3 n)
+{
+	return Materials.diffuse * max(dot(normalize(n), LightVec.xyz), 0.0);
+}
+
+subroutine uniform LightFunc materialShader;
+
+
+
+// Associate any number of the types with a subroutine
+subroutine void Type_1();
+subroutine void Type_2();
+subroutine void Type_3();
+
+subroutine (Type_1, Type_2) Func_1();
+subroutine (Type_1, Type_3) Func_2();
+
+
+
+subroutine uniform Type_1 func_1;
+subroutine uniform Type_2 func_2;
+subroutine uniform Type_3 func_3;
+
+func_1 -> Func_1() and Func_2()
+func_2 -> Func_1()
+func_- -> Func_2()

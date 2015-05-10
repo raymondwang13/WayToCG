@@ -1,0 +1,32 @@
+﻿生成启动时间为 2015/5/11 0:05:44。
+     1>项目“E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\UniformTest\UniformTest.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\UniformTest.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IE:\WayToCG\OpenGLLibs\include /IE:\WayToCG\OpenGLLibs\lib /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Uniform.cpp
+         Uniform.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\UniformTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.lib" /MACHINE:X86 Debug\LoadShaders.obj
+         Debug\Uniform.obj
+         LINK : 没有找到 E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.exe 或上一个增量链接没有生成它；正在执行完全链接
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewBindBufferBase
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewBufferData
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewBindBuffer
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewGenBuffers
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetActiveUniformsiv
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetUniformIndices
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetActiveUniformBlockiv
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetUniformBlockIndex
+     1>Uniform.obj : warning LNK4049: 已导入本地定义的符号 ___glewUseProgram
+     1>glew_static_vs2010_d.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“glew_static_vs2010_d.lib(glew.obj)”或在“E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         UniformTest.vcxproj -> E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\Debug\UniformTest.exe;#1" /manifest Debug\UniformTest.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\UniformTest.unsuccessfulbuild”。
+         正在对“Debug\UniformTest.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C2_Shader_Fundamentals\UniformTest\UniformTest\UniformTest.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.99
