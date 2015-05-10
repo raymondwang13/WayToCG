@@ -21,6 +21,7 @@ const GLuint NumVertices = 6;
 //
 void init(void)
 {
+	// initializing our vertex-array objectsb
 	glGenVertexArrays(NumVAOs,VAOs);
 	glBindVertexArray(VAOs[Triangles]);
 
@@ -34,16 +35,19 @@ void init(void)
 		{-0.85f, 0.90f}
 	};
 
-	glGenBuffers(NumBuffers,Buffers);
+	// allocating vertex-buffer objects
+	glGenBuffers(NumBuffers, Buffers);
 	glBindBuffer(GL_ARRAY_BUFFER, Buffers[ArrayBuffer]);
+
+	// Preparing to Send Data to OpenGL : Loading Data into a Buffer Object
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 	
 	ShaderInfo shaders[]={
-		{GL_VERTEX_SHADER, "triangles.vert"},
-		{GL_FRAGMENT_SHADER, "triangles.frag"},
+		{GL_VERTEX_SHADER, "triangles.vert"},		// vertex shader
+		{GL_FRAGMENT_SHADER, "triangles.frag"},		// fragment shader
 		{GL_NONE,NULL}
 	};
-	// prepare shaders for a GPU
+	// prepare shaders for a GPU: take care of reading the shader files and creating our OpenGL shader programs
 	GLuint program = LoadShaders(shaders);
 
 	glUseProgram(program);
@@ -58,10 +62,19 @@ void init(void)
 void display(void)
 {
 	// clear the window
+
+	glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+
 	glClear(GL_COLOR_BUFFER_BIT);
+
 	// render the two triangles
 	glBindVertexArray(VAOs[Triangles]);
-	glDrawArrays(GL_TRIANGLES,0,NumVertices);
+
+	// Sending Data to OpenGL
+	//glDrawArrays(GL_TRIANGLES, 0, NumVertices);
+
+	glDrawArrays(GL_TRIANGLE_FAN, 0, NumVertices);
+
 	// present image to the screen
 	glFlush();
 }
@@ -72,9 +85,16 @@ void display(void)
 //
 int main(int argc,char**argv)
 {
+	// initializes the GLUT library
 	glutInit(&argc, argv);
+
+	// configures the type of window we want to use with our application
 	glutInitDisplayMode(GLUT_RGBA);
+
+	// specifies the size of the window
 	glutInitWindowSize(512, 512);
+
+	// specify the type of OpenGL context
 	glutInitContextProfile(GLUT_CORE_PROFILE);
 	
 	//glutCreateWindow(argv[0]);
@@ -88,6 +108,7 @@ int main(int argc,char**argv)
 	
 	init();
 	
+	// display callback when the rendering is changed
 	glutDisplayFunc(display);
 	
 	// event loop
