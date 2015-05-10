@@ -32,4 +32,4 @@ subroutine uniform Type_3 func_3;
 
 func_1 -> Func_1() and Func_2()
 func_2 -> Func_1()
-func_- -> Func_2()
+func_3 -> Func_2()
