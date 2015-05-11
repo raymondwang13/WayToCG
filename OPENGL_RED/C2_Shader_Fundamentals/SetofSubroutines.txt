@@ -1,3 +1,4 @@
+//----------------------------------------------------
 // Declaring a Set of Subroutines
 
 subroutine vec4 LightFunc(vec3);
@@ -14,8 +15,42 @@ subroutine (LightFunc) vec4 diffuse(vec3 n)
 
 subroutine uniform LightFunc materialShader;
 
+// let's do something
+GLint materialShaderLoc;
+GLuint ambientIndex;
+GLuint diffuseIndex;
+
+// the calling will reset all of the subroutine uniform values to an implementation-dependent ordering
+glUseProgram(program);
+materialShaderLoc = glGetSubroutineUniformLocation(program, GL_VERTEX_SHADER, "materialShader");
+
+if(materialShaderLoc < 0)
+{
+	// Error: materialShader is not an active subroutine uniform in the shader.
+}
+
+ambientIndex = glGetSubroutineIndex(program, GL_VERTEX_SHADER, "ambient");
+diffuseIndex = glGetSubroutineIndex(program, GL_VERTEX_SHADER, "diffuse");
+
+if(ambientIndex == GL_INVALID_INDEX || diffuseIndex == GL_INVALID_INDEX)
+{
+	// Error: the specified subroutines are not active int the currently bound program for the GL_VERTEX_SHADER stage.
+}
+else
+{
+	GLsizei n;
+	glGetIntegerv(GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS, &n);
+
+	GLuint * indices = new GLuint[n];
+	indices[materialShaderLoc] = ambientIndex;
+
+	glUniformSubroutinesuiv(GL_VERTEX_SHADER, n , indices);
+
+	delete [];
+}
 
 
+//-------------------------------------------------------------------
 // Associate any number of the types with a subroutine
 subroutine void Type_1();
 subroutine void Type_2();
