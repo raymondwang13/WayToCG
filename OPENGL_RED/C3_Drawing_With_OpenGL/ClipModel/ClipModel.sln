@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClipModel", "ClipModel\ClipModel.vcxproj", "{33C5DC6C-949E-493D-A363-CD7622BCBB46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33C5DC6C-949E-493D-A363-CD7622BCBB46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33C5DC6C-949E-493D-A363-CD7622BCBB46}.Debug|Win32.Build.0 = Debug|Win32
+		{33C5DC6C-949E-493D-A363-CD7622BCBB46}.Release|Win32.ActiveCfg = Release|Win32
+		{33C5DC6C-949E-493D-A363-CD7622BCBB46}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
