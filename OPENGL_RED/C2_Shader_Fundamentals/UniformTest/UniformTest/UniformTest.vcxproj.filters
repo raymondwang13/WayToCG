@@ -26,6 +26,9 @@
     <ClInclude Include="LoadShaders.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="Reshape_Callback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="uniforms.frag">

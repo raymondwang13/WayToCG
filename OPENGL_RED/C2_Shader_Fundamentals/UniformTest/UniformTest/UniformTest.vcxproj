@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoadShaders.h" />
+    <ClInclude Include="Reshape_Callback.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="uniforms.frag" />

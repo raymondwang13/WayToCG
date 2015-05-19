@@ -1,6 +1,0 @@
-Version 4.3's graphiccal pipeline contains four processing states:
-1. The Vertex shading stage (mandatory)
-2. The Tessellation shading stage (optional)
-3. The Geometry shading stage (optional)
-4. The Fragment shading stage (mandatory)
-5. The Compute shading stage 

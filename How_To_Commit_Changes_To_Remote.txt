@@ -1,0 +1,5 @@
+1. git status
+2. git diff -cached <file>
+3. git add <newfile> | git add <file> | git rm <file>
+4. git commit 
+5. git pull (conflict: git checkout -- <conflict files>) | git push origin <local branch>
