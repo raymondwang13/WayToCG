@@ -1,6 +1,6 @@
 # WayToCG
 
-Learning computer of graphics on the way.
+Learning computer graphics on the way.
 
 If you like it, you can checkout it:
 
