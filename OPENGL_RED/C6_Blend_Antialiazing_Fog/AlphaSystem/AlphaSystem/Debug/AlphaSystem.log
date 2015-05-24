@@ -1,0 +1,32 @@
+﻿生成启动时间为 2015/5/24 17:39:35。
+     1>项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\AlphaSystem\AlphaSystem.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\”。
+       InitializeBuildStatus:
+         正在创建“Debug\AlphaSystem.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt alpha.cpp
+         alpha.cpp
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(20): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(20): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(21): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(30): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(30): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(31): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(32): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\alphasystem\alphasystem\alpha.cpp(32): warning C4305: “参数”: 从“double”到“GLfloat”截断
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\AlphaSystem.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AlphaSystem.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\AlphaSystem.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\AlphaSystem.lib" /MACHINE:X86 Debug\alpha.obj
+         AlphaSystem.vcxproj -> E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\AlphaSystem.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\Debug\AlphaSystem.exe;#1" /manifest Debug\AlphaSystem.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\AlphaSystem.unsuccessfulbuild”。
+         正在对“Debug\AlphaSystem.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AlphaSystem\AlphaSystem\AlphaSystem.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.06

@@ -1,0 +1,24 @@
+﻿生成启动时间为 2015/5/24 20:08:43。
+     1>项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\AntializingLine\AntializingLine.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\AntializingLine.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt anti_line.cpp
+         anti_line.cpp
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\antializingline\antializingline\anti_line.cpp(38): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\antializingline\antializingline\anti_line.cpp(47): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\antializingline\antializingline\anti_line.cpp(82): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AntializingLine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.lib" /MACHINE:X86 Debug\anti_line.obj
+         LINK : 没有找到 E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.exe 或上一个增量链接没有生成它；正在执行完全链接
+         AntializingLine.vcxproj -> E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\Debug\AntializingLine.exe;#1" /manifest Debug\AntializingLine.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\AntializingLine.unsuccessfulbuild”。
+         正在对“Debug\AntializingLine.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\AntializingLine\AntializingLine\AntializingLine.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.81
