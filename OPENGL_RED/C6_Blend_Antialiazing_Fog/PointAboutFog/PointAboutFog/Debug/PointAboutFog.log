@@ -1,0 +1,20 @@
+﻿生成启动时间为 2015/5/25 22:50:11。
+     1>项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\PointAboutFog\PointAboutFog\PointAboutFog.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\PointAboutFog.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt pointp.cpp
+         pointp.cpp
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(10): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(11): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(49): warning C4101: “f3”: 未引用的局部变量
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(47): warning C4101: “f2”: 未引用的局部变量
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(45): warning C4101: “f1”: 未引用的局部变量
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(81): error C2564: “PFNGLPOINTPARAMETERFVPROC”: 到内置类型的函数样式转换只能接受一个参数
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(85): error C2564: “PFNGLPOINTPARAMETERFVPROC”: 到内置类型的函数样式转换只能接受一个参数
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\pointaboutfog\pointaboutfog\pointp.cpp(89): error C2564: “PFNGLPOINTPARAMETERFVPROC”: 到内置类型的函数样式转换只能接受一个参数
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\PointAboutFog\PointAboutFog\PointAboutFog.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.72
