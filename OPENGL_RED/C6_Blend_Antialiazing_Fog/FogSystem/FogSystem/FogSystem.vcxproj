@@ -61,6 +61,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fog.cpp" />
+    <ClCompile Include="fogcoord.cpp" />
+    <ClCompile Include="fog_index.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

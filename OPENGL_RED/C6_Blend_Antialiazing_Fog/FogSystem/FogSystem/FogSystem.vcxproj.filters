@@ -18,5 +18,11 @@
     <ClCompile Include="fog.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="fog_index.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fogcoord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,3 +1,5 @@
+/*
+
 #include <iostream>
 #include <GL/glew.h> 
 #include <GL/glut.h> 
@@ -40,6 +42,8 @@ static void renderSphere(GLfloat x, GLfloat y, GLfloat z)
 /*
 display() draws 5 shperes at different z positions.
 */
+
+/*
 void display(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -100,3 +104,6 @@ int main(int argc, char** argv)
 
 	return 0;
 }
+
+
+*/
