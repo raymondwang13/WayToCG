@@ -1,0 +1,35 @@
+﻿生成启动时间为 2015/5/25 8:07:03。
+     1>项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\MultiSample\MultiSample.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\MultiSample.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt multisamp.cpp
+         multisamp.cpp
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(25): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(27): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(30): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(30): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(35): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(36): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(53): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(53): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(54): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(54): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(55): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(55): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(56): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>e:\waytocg\opengl_red\c6_blend_antialiazing_fog\multisample\multisample\multisamp.cpp(56): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MultiSample.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.lib" /MACHINE:X86 Debug\multisamp.obj
+         LINK : 没有找到 E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.exe 或上一个增量链接没有生成它；正在执行完全链接
+         MultiSample.vcxproj -> E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\Debug\MultiSample.exe;#1" /manifest Debug\MultiSample.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\MultiSample.unsuccessfulbuild”。
+         正在对“Debug\MultiSample.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C6_Blend_Antialiazing_Fog\MultiSample\MultiSample\MultiSample.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.99
