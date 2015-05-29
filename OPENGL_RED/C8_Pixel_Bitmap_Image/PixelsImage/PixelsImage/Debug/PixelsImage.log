@@ -1,0 +1,19 @@
+﻿生成启动时间为 2015/5/29 23:30:14。
+     1>项目“E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\PixelsImage\PixelsImage.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\PixelsImage.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\Debug\PixelsImage.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PixelsImage.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\Debug\PixelsImage.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\Debug\PixelsImage.lib" /MACHINE:X86 Debug\image.obj
+         Debug\pboimage.obj
+     1>pboimage.obj : error LNK2001: 无法解析的外部符号 __imp____glewBufferData
+     1>pboimage.obj : error LNK2001: 无法解析的外部符号 __imp____glewBindBuffer
+     1>pboimage.obj : error LNK2001: 无法解析的外部符号 __imp____glewGenBuffers
+     1>pboimage.obj : error LNK2019: 无法解析的外部符号 __imp__glewInit@0，该符号在函数 "void __cdecl init(void)" (?init@@YAXXZ) 中被引用
+     1>E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\Debug\PixelsImage.exe : fatal error LNK1120: 4 个无法解析的外部命令
+     1>已完成生成项目“E:\WayToCG\OPENGL_RED\C8_Pixel_Bitmap_Image\PixelsImage\PixelsImage\PixelsImage.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.15
