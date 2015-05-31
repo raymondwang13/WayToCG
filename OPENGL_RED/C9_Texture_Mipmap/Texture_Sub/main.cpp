@@ -1,4 +1,4 @@
-/*  checker.c
+/*  subtex.c
  *  This program texture maps a checkerboard image onto
  *  two rectangles.
  *
@@ -13,7 +13,11 @@
 /*	Create checkerboard texture	*/
 #define	checkImageWidth 64
 #define	checkImageHeight 64
+#define subImageWidth 16
+#define subImageHeight 16
+
 static GLubyte checkImage[checkImageHeight][checkImageWidth][4];
+static GLubyte subImage[subImageHeight][subImageWidth][4];
 
 #ifdef GL_VERSION_1_1
 static GLuint texName;
@@ -30,6 +34,16 @@ void makeCheckImage(void)
          checkImage[i][j][1] = (GLubyte) c;
          checkImage[i][j][2] = (GLubyte) c;
          checkImage[i][j][3] = (GLubyte) 255;
+      }
+   }
+
+   for (i = 0; i < subImageHeight; i++) {
+      for (j = 0; j < subImageWidth; j++) {
+         c = ((((i&0x4)==0)^((j&0x4))==0))*255;
+         subImage[i][j][0] = (GLubyte) c;
+         subImage[i][j][1] = (GLubyte) 0;
+         subImage[i][j][2] = (GLubyte) 0;
+         subImage[i][j][3] = (GLubyte) 255;
       }
    }
 }
@@ -99,6 +113,26 @@ void reshape(int w, int h)
 void keyboard (unsigned char key, int x, int y)
 {
    switch (key) {
+   case 's':
+   case 'S':
+   {
+        glBindTexture(GL_TEXTURE_2D, texName);
+        glTexSubImage2D(GL_TEXTURE_2D, 0, 12, 44,
+                        subImageWidth, subImageHeight,
+                        GL_RGBA, GL_UNSIGNED_BYTE, subImage);
+        glutPostRedisplay();
+   }
+       break;
+   case 'r':
+   case 'R':
+   {
+    glBindTexture(GL_TEXTURE_2D, texName);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA,
+                 checkImageWidth, checkImageHeight, 0,
+                 GL_RGBA, GL_UNSIGNED_BYTE, checkImage);
+    glutPostRedisplay();
+   }
+       break;
       case 27:
          exit(0);
          break;
