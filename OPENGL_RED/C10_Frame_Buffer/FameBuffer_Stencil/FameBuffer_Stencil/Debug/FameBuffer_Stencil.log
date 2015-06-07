@@ -1,0 +1,28 @@
+﻿生成启动时间为 2015/6/7 11:32:01。
+     1>项目“D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\FameBuffer_Stencil\FameBuffer_Stencil.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\”。
+       InitializeBuildStatus:
+         正在创建“Debug\FameBuffer_Stencil.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt mian.cpp
+         mian.cpp
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(19): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(19): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(22): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(22): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(22): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c10_frame_buffer\famebuffer_stencil\famebuffer_stencil\mian.cpp(23): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\FameBuffer_Stencil.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\FameBuffer_Stencil.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\FameBuffer_Stencil.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\FameBuffer_Stencil.lib" /MACHINE:X86 Debug\mian.obj
+         FameBuffer_Stencil.vcxproj -> D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\FameBuffer_Stencil.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\Debug\FameBuffer_Stencil.exe;#1" /manifest Debug\FameBuffer_Stencil.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\FameBuffer_Stencil.unsuccessfulbuild”。
+         正在对“Debug\FameBuffer_Stencil.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\WayToCG\OPENGL_RED\C10_Frame_Buffer\FameBuffer_Stencil\FameBuffer_Stencil\FameBuffer_Stencil.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.35
