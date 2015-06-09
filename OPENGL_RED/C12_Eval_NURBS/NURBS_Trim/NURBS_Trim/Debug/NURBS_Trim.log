@@ -1,0 +1,25 @@
+﻿生成启动时间为 2015/6/9 23:23:21。
+     1>项目“D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\NURBS_Trim\NURBS_Trim.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\NURBS_Trim.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\waytocg\opengl_red\c12_eval_nurbs\nurbs_trim\nurbs_trim\main.cpp(28): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>d:\waytocg\opengl_red\c12_eval_nurbs\nurbs_trim\nurbs_trim\main.cpp(29): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>d:\waytocg\opengl_red\c12_eval_nurbs\nurbs_trim\nurbs_trim\main.cpp(52): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c12_eval_nurbs\nurbs_trim\nurbs_trim\main.cpp(52): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>d:\waytocg\opengl_red\c12_eval_nurbs\nurbs_trim\nurbs_trim\main.cpp(52): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\Debug\NURBS_Trim.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\NURBS_Trim.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\Debug\NURBS_Trim.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\Debug\NURBS_Trim.lib" /MACHINE:X86 Debug\main.obj
+         NURBS_Trim.vcxproj -> D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\Debug\NURBS_Trim.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\Debug\NURBS_Trim.exe;#1" /manifest Debug\NURBS_Trim.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\NURBS_Trim.unsuccessfulbuild”。
+         正在对“Debug\NURBS_Trim.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\WayToCG\OPENGL_RED\C12_Eval_NURBS\NURBS_Trim\NURBS_Trim\NURBS_Trim.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.28
