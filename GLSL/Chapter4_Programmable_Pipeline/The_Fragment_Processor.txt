@@ -1,0 +1,8 @@
+The fragment shader doing:
+* Texture image specification 
+* Alternate texture image specification
+* Compressed texture image specification
+* Texture parameters that behave as specified even when texture is accessed from within a fragment shader
+* Texture state and proxy state
+* Texture object specification
+* Texture comparison modes

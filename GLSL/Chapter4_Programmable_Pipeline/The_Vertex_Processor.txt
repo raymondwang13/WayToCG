@@ -1,0 +1,10 @@
+The vertex shader doing:
+* Perspective division on clip coordinates
+* Viewport mapping 
+* Depth range scaling
+* View frustum clipping
+* Front face determination
+* Culling
+* Flat-shading 
+* Associated data clipping
+* Final color processing 
