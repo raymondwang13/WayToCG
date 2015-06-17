@@ -1,0 +1,67 @@
+typedef float T
+typedef vec2  T
+typedef vec3  T
+typedef vec4  T
+
+typedef int   S
+typedef ivec2 S
+typedef ivec3 S
+typedef ivec4 S
+
+typedef uint  U
+typedef uvec2 U
+typedef uvec3 U
+typedef uvec4 U
+
+typedef bool  B
+typedef bvec2 B
+typedef bvec3 B
+typedef bvec4 B
+
+1. T abs(T x)			result |x|
+
+2. S abs(S x)			result |x|
+
+3. T sign(T x)			return 1.0(x>0) 0.0(x=0.0) -1.0(x<0)
+
+4. S sign(S x)			return 1.0(x>0) 0.0(x=0.0) -1.0(x<0)
+
+5. T floor(T x)			return a value equal to the nearest integer that is less than or equal to x
+
+6. T trunc(T x)			return a value equal to the nearest integer to x whose absolute value is not larger than the absolute value of x
+
+7. T round(T x)			return a value to the nearest integer of x add 1 (if a fractional part >= 0.5) or add 0 (if a fractioal part < 0.5)
+
+8. T roundEven(T x)		return a even integer (3.5 or 4.5 is 4.0)
+
+9. T ceil(T x)			return a value equal to the nearest integer that is greater than or equal to x
+
+10. T fract(T x)		return x - floor(x)  means: A fractional part of x
+
+11. T mod(T x, float y)		return modulus. x - y * floor (x / y)
+
+12. T mod(T x, T y)		return x - y * floor (x / y)
+
+13. T min or max(T x, T y)	return min or max value
+
+14. S min or max(S x, S y)	return min or max corresponding component
+
+15. U min or max(U x, U y)	return min or max corresponding component
+
+16. T min or max(T x, float y)  return minimum  or maximum for each component of x compared with the scalar value y
+
+17. S min or max(S x, int y)    return as above
+
+18. U min or max(s x, uint y)   return as above
+
+19. T clamp(T x, T minVal, T maxVal) return min(max(x, minVal), maxVal)
+
+20. T mix(T x, T y, T a)	return  x * (1.0 - a) + y * a
+
+21. T step(T edge, T x)		return 0.0 (x < edge) or 1.0 (x >= edge)
+
+22. smoothstep(T edge0, T edge1, T x) return Hermite interpolation between 0.0 and 1.0
+
+23. B isnan(T x)		nan not a number	
+
+24. B isinf(T x)		inf infinity positive or negative
