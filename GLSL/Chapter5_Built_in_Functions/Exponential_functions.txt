@@ -1,0 +1,18 @@
+typedef float T
+typedef vec2  T
+typedef vec3  T
+typedef vec4  T
+
+1. T pow(T x, T y)	return x^y
+
+2. T exp(T x)		return e^x
+
+3. T log(T x)		return lnx
+
+4. T exp2(T x)		return 2^x
+
+5. T log2(T x)		result log2x
+
+6. T sqrt(T x)		result +sqrt(x)
+
+7. T inversesqrt(T x)	result 1 / +sqrt(x)
