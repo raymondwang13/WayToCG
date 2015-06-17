@@ -1,0 +1,34 @@
+typedef float T
+typedef vec2  T
+typedef vec3  T
+typedef vec4  T
+
+1. T radians(T degrees)	result PI / 180 * degrees
+
+2. T degrees(T radians)	result 180 / PI * radians
+
+3. T sin(T radians)	result [-1, 1]
+
+4. T cos(T radians)	result [-1, 1]
+
+5. T tan(T radians)	
+
+6. T asin(T x)          range [-PI/2, PI/2]
+
+7. T acos(T x)		range [0, 2 * PI]
+
+8. T atan(T y, T x)   	result [-PI, PI]
+
+9. T atan(T y_over_x)   result [-PI/2, PI/2]
+
+10. T sinh (T x)  	result (pow(e,x) - pow(e,-x))/2
+
+11. T conh(T x)      	result (pow(e,x) + pow(e,-x))/2
+
+12. T tanh(T x)		result (pow(e,x) - pow(e,-x))/(pow(e,x) + pow(e,-x))
+
+13. T asinh(T x)	result inverse of sinh
+
+14. T acosh(T x)	result inverse of conh
+
+15. T atanh(T x)	result inverse of tanh
