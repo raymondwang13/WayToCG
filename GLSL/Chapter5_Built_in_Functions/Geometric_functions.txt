@@ -1,0 +1,28 @@
+typedef float T
+typedef vec2  T
+typedef vec3  T
+typedef vec4  T
+
+1. T length(T x)		 	return sqrt(x[0] * x[0] + x[1] * x[1] + ....)
+
+2. T distance(T p0, T p1)	 	return length(p0 - p1)
+
+3. float dot(T x, T y)		 	return x[0] * y[0] + x[1] * y[1] + ... (dot product)
+
+4. vec3 cross(vec3 x, vec3 y)    	return 	result[0] = x[1] * y[2] - y[1] * x[2] (cross product)
+				        	result[1] = x[2] * y[0] - y[2] * x[0]
+				        	result[2] = x[0] * y[1] - y[0] * x[1] 
+
+5. T normalize(T x)		 	return same direciton as x and length is 1
+
+6. T faceforward(T N, T I, T Nref) 	if dot(Nref, I) < 0.0 return N; otherwise, return -N
+
+7. T reflect(T I, T N) 			N must already be normalized and I need not be mormalized  return I - 2.0 * dot(N, I) * N
+
+8. T refract(T I, T N, float eta)	k = 1.0 - eta * eta * (1.0 - dot(N,I) * dot(N, I))
+					if k < 0.0
+						return 0.0 // result type is float or vec2/3/4
+					else
+						return result = etat * I - (eta * dot(N, I) * sqrt(k)) * N
+
+					I and N must already be normalize.
