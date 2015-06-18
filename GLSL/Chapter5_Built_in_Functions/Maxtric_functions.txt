@@ -1,0 +1,12 @@
+typedef mat2	M
+typedef mat3 	M
+typedef mat4	M
+
+
+1. M matrixCompMult(M x, M y)			return x * y witch result[i][j] = x[i][j] mult y[i][j]
+
+2. M(row x column) transpose(T(column x row) m)	return the transpose of m
+
+3. M inverse(M m)				return invese matrix
+
+4. M outProduct(T c, T r) (T = vec2/3/4)	return outer product
