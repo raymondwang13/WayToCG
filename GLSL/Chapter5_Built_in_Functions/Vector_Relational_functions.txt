@@ -1,0 +1,34 @@
+typedef bvec2 B
+typedef bvec3 B
+typedef bvec4 B
+
+typedef vec2  F
+typedef vec3  F
+typedef vec4  F
+
+typedef ivec2 I
+typedef ivec3 I
+typedef ivec4 I
+
+1. B lessThan(F/I x, F/I y)			return the component-wise compare of x < y
+
+2. B lessThanEqual(F/I x, F/I y)		return the component-wise compare of x <= y
+
+3. B greaterThan(F/I x, F/I y)		        return the component-wise compare of x > y
+
+4. B greaterThanEqual(F/I x, F/I y)		return the component-wise compare of x >= y
+
+5. B equal(F/I/B x, F/I/B y)		        return the component-wise compare of x == y
+
+6. B notEqual(F/I/B x, F/I/B y)		        return the component-wise compare of x != y
+
+7. bool any(B x)				return true if any component of x is true
+
+8. bool all(B x)				return true only if all components of x are true
+
+9. B not(B x)					return logical complement of x
+
+
+
+
+ 
