@@ -1,0 +1,17 @@
+To install and use OpenGL shaders, do the following:
+
+1. Create one or more (empty) shader objects with glCreateShader().
+
+2. Provide source code for these shaders with glShaderSource().
+
+3. Compile each of the shaders with glCompileShader().
+
+4. Create a program object with glCreateProgram().
+
+5. Attach all the shader objects to the program object with glAttachShader();
+
+6. Link the program object with glLinkProgram().
+
+7. Install the executable program as part of OpenGL's current state with glUseProgram().
+
+8. If the shaders uses the default uniform block, query the locations of uniform variables with glGetUniformLocation() and then set their values with glUniform().
