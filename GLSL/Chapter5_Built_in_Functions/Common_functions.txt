@@ -38,7 +38,7 @@ typedef bvec4 B
 
 10. T fract(T x)		return x - floor(x)  means: A fractional part of x
 
-11. T mod(T x, float y)		return modulus. x - y * floor (x / y)
+11. T mod(T x, float y)	return modulus. x - y * floor (x / y)
 
 12. T mod(T x, T y)		return x - y * floor (x / y)
 
