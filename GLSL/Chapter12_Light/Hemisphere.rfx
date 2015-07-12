@@ -905,7 +905,7 @@
    >
 ]>
 <RENDER_MONKEY>
- <RmEffectWorkspace NAME="Effect Workspace" API="" ACTIVE_EFFECT="Effect Workspace.BumpMapping.Effect" VALIDATION_STRING="" XML_VERSION="RenderMonkey 1.71">
+ <RmEffectWorkspace NAME="Effect Workspace" API="" ACTIVE_EFFECT="Effect Workspace.Hemisphere.Effect" VALIDATION_STRING="" XML_VERSION="RenderMonkey 1.71">
   <RmRegistryBranch NAME="RM_REGISTRY" API="" XML_VERSION="RenderMonkey 1.71">
    <RmRegistryBranch NAME="RM_LOCAL" API="" XML_VERSION="RenderMonkey 1.71">
     <RmRegistryBranch NAME="RM_PLUGIN" API="" XML_VERSION="RenderMonkey 1.71"><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -916,7 +916,7 @@
      <RmRegistryBranch NAME="RmPreviewGLPreview" API="" XML_VERSION="RenderMonkey 1.71"/>
      <RmRegistryBranch NAME="RmPreviewGLWindow" API="" XML_VERSION="RenderMonkey 1.71">
       <RmRegistryBranch NAME="EffectPlacementRepository" API="" XML_VERSION="RenderMonkey 1.71">
-       <RmRegistryBranch NAME="Effect Workspace.BumpMapping.Effect" API="" XML_VERSION="RenderMonkey 1.71">
+       <RmRegistryBranch NAME="Effect Workspace.Hemisphere.Effect" API="" XML_VERSION="RenderMonkey 1.71">
         <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="350" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -941,7 +941,7 @@
       <RmRegistryBranch NAME="EditNodeRepository" API="" XML_VERSION="RenderMonkey 1.71"/>
      </RmRegistryBranch>
      <RmRegistryBranch NAME="RmShaderEditor" API="" XML_VERSION="RenderMonkey 1.71">
-      <RmRegistryBranch NAME="Effect Workspace.BumpMapping.Effect" API="" XML_VERSION="RenderMonkey 1.71">
+      <RmRegistryBranch NAME="Effect Workspace.Hemisphere.Effect" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
        <RmStringVariable NAME="Editing Shader" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Fragment Program]]></RmTextDataBlock></RmStringVariable>
@@ -972,17 +972,17 @@ Pass]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-10/7/2015 23:38:5]]></RmTextDataBlock></RmStringVariable>
+12/7/2015 15:26:16]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey 1.71]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="BASE_WORKSPACE_PATH" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-D:\WayToCG\GLSL\Chapter11_Procedural_Texture_Shaders\]]></RmTextDataBlock></RmStringVariable>
+D:\WayToCG\GLSL\Chapter12_Light\]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
    </RmRegistryBranch>
   </RmRegistryBranch>
-  <RmEffectGroup NAME="BumpMapping" API="">
+  <RmEffectGroup NAME="Hemisphere" API="">
    <RmOpenGLEffect NAME="Effect" API="OpenGL" ACTIVE_CAMERA="">
     <RmStreamMap NAME="Stream Mapping" API="">
      <RmStream NAME="Stream" API="" STRIDE="32">
@@ -995,79 +995,31 @@ D:\WayToCG\GLSL\Chapter11_Procedural_Texture_Shaders\]]></RmTextDataBlock></RmSt
     <RmGLPass NAME="Pass" API="OpenGL" PASS_INDEX="0" ENABLED="TRUE">
      <RmModelReference NAME="Model" API=""/>
      <RmGLShader NAME="Vertex Program" API="OpenGL" PIXEL_SHADER="FALSE"><RmShaderCode TYPE="TEXT"><![CDATA[
-/////////////////////// Bump Mapping /////////////////////////
-// Listing 11.7 Vertex shader for doing procedural bump mapping
+//////////////////////// Hemisphere Lighting ///////////////////////////
+// Listing 12.1 Vertex shader for hemisphere
 #version 140
 uniform vec3 LightPosition;
+uniform vec3 SkyColor;
+uniform vec3 GroundColor;
 uniform mat4 MVMatrix;
 uniform mat4 MVPMatrix;
 uniform mat3 NormalMatrix;
 in vec4 MCVertex;
 in vec3 MCNormal;
-in vec3 MCTangent;
-in vec2 TexCoord0;
-out vec3 LightDir;
-out vec3 EyeDir;
-out vec2 TexCoord;
-void main()
+out vec3 Color;
+void main (void)
 {
+	vec3 ecPosition = vec3(MVMatrix * MCVertex);
+	vec3 tnorm = normalize(NormalMatrix * MCNormal);
+	vec3 lightVec = normalize(LightPosition - ecPosition);
+	float costheta  = dot(tnorm, lightVec);
+	float a = costheta * 0.5 + 0.5;
+	Color = mix(GroundColor, SkyColor, a);
 	gl_Position = MVPMatrix * MCVertex;
-	EyeDir = vec3(MVMatrix * MCVertex);
-	TexCoord = TexCoord0.st;
-
-	vec3 n = normalize(NormalMatrix * MCNormal);
-	vec3 t = normalize(NormalMatrix * MCTangent);
-	vec3 b = cross(n, t);
-	
-	vec3 v;
-	v.x = dot(LightPosition, t);
-	v.y = dot(LightPosition, b);
-	v.z = dot(LightPosition, n);
-
-	LightDir = normalize(v);
-	v.x = dot(EyeDir, t);
-	v.y = dot(EyeDir, b);
-	v.z = dot(EyeDir, n);
-
-	EyeDir = normalize(v);
-}]]></RmShaderCode></RmGLShader>
+}
+]]></RmShaderCode></RmGLShader>
      <RmGLShader NAME="Fragment Program" API="OpenGL" PIXEL_SHADER="TRUE"><RmShaderCode TYPE="TEXT"><![CDATA[
-// Listing 11.8 Fragment shader for procedural bump mapping
-#version 140
-uniform vec4 SurfaceColor; // = (0.7, 0.6, 0.18, 1.0)
-uniform float BumpDensity; // = 16.0
-uniform float BumpSize; // = 0.15
-uniform float SpecularFactor; // = 0.5
-in vec3 LightDir;
-in vec3 EyeDir;
-in vec2 TexCoord;
-out vec4 FragColor;
-void main()
-{
-	vec3 litColor;
-	vec2 c = BumpDensity * TexCoord.st;
-	vec2 p = fract(c) - vec2(0.5);
-
-	float d, f;
-	d = dot(p,p);
-	f = inversesqrt(d + 1.0);
-	if (d >= BumpSize)
-	{ 
-		p = vec2(0.0); 
-		f = 1.0; 
-	}
-
-	vec3 normDelta = vec3(p.x, p.y, 1.0) * f;
-	litColor = SurfaceColor.rgb * max(dot(normDelta, LightDir), 0.0);
-	
-	vec3 reflectDir = reflect(LightDir, normDelta);
-	float spec = max(dot(EyeDir, reflectDir), 0.0);
-	spec = pow(spec, 6.0);
-	spec *= SpecularFactor;
-	
-	litColor = min(litColor + spec, vec3(1.0));
-	FragColor = vec4(litColor, SurfaceColor.a);
-}]]></RmShaderCode></RmGLShader>
+// TODO]]></RmShaderCode></RmGLShader>
      <RmStreamMapReference NAME="Stream Mapping" API=""/>
     </RmGLPass>
    </RmOpenGLEffect>
