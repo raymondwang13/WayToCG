@@ -9,14 +9,16 @@ Your function should return length = 2, and A is now [1,2].
 #include <iostream>
 using namespace std;
 
-int removeDuplicate(int A[], int length)
+int Solution(int A[], int length)
 {
+	// print original array elements
 	for(int i=0; i<length; ++i)
 	{
 		std::cout << A[i] << " ";	
 	}
 	std::cout << std::endl;
 	
+	// handle the array
 	int index = 0;
 	for(int i=1; i<length; ++i)
 	{
@@ -26,6 +28,7 @@ int removeDuplicate(int A[], int length)
 		}
 	}
 	
+	// print the handled array
 	std::cout << "After Remove:" << std::endl;
 	for(int i=0; i<index+1; ++i)
 	{
@@ -39,7 +42,7 @@ int main()
 {
 	int A[10] = {1,1,1,3,3,3,4,4,5,5};
 	
-	int length = removeDuplicate(A, 10);
+	int length = Solution(A, 10);
 	
 	std::cout << std::endl << "The length is " << length << std::endl; 
 		
